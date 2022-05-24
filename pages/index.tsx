@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { SearchJob } from '../components/SearchJob';
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +11,8 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <h1 className='text-3xl text-center mt-10 font-bold'>Jone Jobs</h1>
+      <SearchJob />
+
       <div className='absolute top-0 left-0 w-full h-full bg-slate-800 -z-10' />
     </div>
   );
